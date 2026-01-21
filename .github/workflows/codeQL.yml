@@ -13,6 +13,10 @@ jobs:
       security-events: write
       actions: read
       contents: read
+    analyze:
+      strategy:
+        matrix:
+          language: [ 'javascript' ]
 
     steps:
       - name: Checkout repository
